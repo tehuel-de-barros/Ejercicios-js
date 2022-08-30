@@ -7,11 +7,30 @@
 // }
 
 
-/* Script que pida string(pueden ser numeros pero en forma de string), hasta pulsar "cancelar" y
-cuandoeso pase que salga en forma de alerta todos esos string  */
 
-let concatenacion = "";
-// let res[];
+
+// a)
+/* let lavarLosPlatos = prompt("Hijo ya lavaste los platos?");
+let resul = lavarLosPlatos.toLocaleLowerCase();
+ 
+if(resul === "si")  {
+    let teBañaste = prompt("Y te bañaste");
+    let result = teBañaste.toLocaleLowerCase();
+    if (result === "si") {
+        alert("Entonces ya mismo anda a dormir");
+    }else{
+        alert("Hacelo y anda a dormir")
+    }
+}
+else {
+    alert("Ya mismo hacelo")
+} */
+
+
+/* Script que pida string(pueden ser numeros pero en forma de string), hasta pulsar "cancelar" y
+cuando eso pase que salga en forma de alerta todos esos string  */
+// b)
+/* let concatenacion = "";
 do {
     let cadena = prompt("Introduce una palabra o numero");
     //Como concatenacion va a estar vacio,no contcatenamos el guion
@@ -23,3 +42,22 @@ do {
     }
 } while (confirm("¿Seguir?"));
 alert(concatenacion);
+ */
+
+// c)
+function carrito() {
+    const productos = [];
+    let producto = prompt('¿que desea comprar?');
+    productos.push(producto);
+
+    while (confirm('¿Desea agregar otro elemento al carro?')) {
+        let producto = prompt('¿que mas desea comprar?');
+        productos.push(producto);
+    } 
+    console.log('Usted compro:')
+    for (let lista of productos) {
+        console.log(lista);
+    }
+}
+
+carrito();
