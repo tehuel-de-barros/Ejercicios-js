@@ -45,19 +45,65 @@ alert(concatenacion);
  */
 
 // c)
-function carrito() {
-    const productos = [];
-    let producto = prompt('¿que desea comprar?');
-    productos.push(producto);
+// function carrito() {
+//     const productos = [];
+//     let producto = prompt('¿que desea comprar?');
+//     productos.push(producto);
 
-    while (confirm('¿Desea agregar otro elemento al carro?')) {
-        let producto = prompt('¿que mas desea comprar?');
-        productos.push(producto);
-    } 
-    console.log('Usted compro:')
-    for (let lista of productos) {
-        console.log(lista);
+//     while (confirm('¿Desea agregar otro elemento al carro?')) {
+//         let producto = prompt('¿que mas desea comprar?');
+//         productos.push(producto);
+//     } 
+//     console.log('Usted compro:')
+//     for (let lista of productos) {
+//         console.log(lista);
+//     }
+// }
+
+// carrito();
+
+// const productos = [
+//     {nombre: ""}, 
+// ];
+
+// let nombre = prompt("Que desea comprar?");
+
+// let producto = {nombre: nombre};
+// productos.push(producto);
+
+// while(confirm("¿Desea otro producto mas?")) { 
+//     let nombre = prompt("¿Que mas desea comprar?");
+//     let producto = {nombre: nombre};
+//     productos.push(producto);
+// }
+// console.log('Usted compro:')
+//     for (let lista of productos) {
+//         console.log(lista);
+//     }
+
+
+class Productos{ 
+    constructor(nombre){
+        this.nombre = nombre;
     }
 }
 
-carrito();
+const product = [];
+let nombre = prompt("Que desea comprar?");
+let producto = new Productos(nombre);
+product.push(producto);
+
+while(confirm("¿Desea otro producto mas?")) { 
+    let nombre = prompt("¿Que mas desea comprar?");
+    let producto = new Productos(nombre);
+    product.push(producto);
+}
+
+console.log('Usted compro:')
+    for(let lista of product) { 
+        console.log(lista);
+    }
+    // El for in me indica la posicion en el array
+    for(let lista in product) { 
+        console.log(lista); 
+    }  
