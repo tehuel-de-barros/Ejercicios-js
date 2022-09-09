@@ -1,0 +1,21 @@
+main { 
+    h1 { 
+        text-align: center;
+    }
+    p { 
+        text-align: center;
+        color: $color-secundario;
+    }
+    .amd-intel  { 
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: $tamaño-chico;
+        a { 
+            img { 
+                width: 100%;
+            }
+        }
+    }
+}
+

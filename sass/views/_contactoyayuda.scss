@@ -1,0 +1,33 @@
+main { 
+    background-color: white;
+    .help {
+        border: 1px solid #000000;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        margin: 10px;
+        padding: 40px;
+        text-align: center;
+        background-color: red;
+    }
+    .contact {
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+        .contact-info { 
+            display: flex;
+            flex-direction: column;
+            a { 
+                color: $color-secundario;
+                font-size: $tamaño-medio;
+                h2 { 
+                    color: $color-terciario;
+                    font-size: $tamaño-muy-grande;
+                }
+            }
+        }
+    }
+}
+
+
+    
+

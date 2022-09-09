@@ -1,0 +1,12 @@
+@mixin padding($arriba,$derecha,$abajo,$izq) {
+    padding-top: $arriba;
+    padding-right: $derecha;
+    padding-bottom: $abajo;
+    padding-left: $izq;
+}
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+

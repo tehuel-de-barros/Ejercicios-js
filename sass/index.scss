@@ -1,0 +1,21 @@
+@import "./misc/media.scss"; 
+// MISC 
+
+@import "./misc/variables.scss";
+@import "./misc/normalize.scss";
+@import "./misc/mixins.scss";
+
+// PARTIALS
+
+@import "./partials/header.scss";
+@import "./partials/main.scss";
+@import "./partials/footer.scss";
+
+// VIEWS
+
+@import "./views/armatupc.scss";
+@import "./views/carrito.scss";
+@import "./views/contactoyayuda.scss";
+@import "./views/productos.scss";
+@import "./views/carrito-amd-intel"
+

@@ -1,0 +1,113 @@
+// // main
+
+// main{
+//     background-color: $principal;
+
+//     .navegation { 
+//         background-color: $secundario;        
+//         // padding: 24px 120px;
+//         @include padding(24px,120px,24px,120px);
+
+//         .menu-second {
+
+
+//             li {
+//                 a { 
+//                     transition-duration: 1.2s;
+//                     // padding: 0 20px;
+//                     @include padding(0,20px,0,20px);
+//                 }
+                
+//                 & a:hover { 
+//                     color:map-get($colortext,color-cuarto);
+//                     font-size: 1.2em; 
+//                 }
+//             }
+
+             
+//         }
+//     }
+
+//  .title   { 
+//     font-size: 2em;
+//     text-align: center;
+//    color: $color;
+// }
+
+// .menu-second { 
+//     display: grid;
+//     grid-template-areas: 
+//     "menu-second__item" "menu-second__item2" "menu-second__item3" "menu-second__item4";
+//     grid-template-columns: 25vh 25vh 25vh 25vh;
+//     grid-template-rows: 1fr ;
+//     font-size: 3em;
+//     align-items: center;
+//     justify-content: space-around;
+// }
+
+// .hardware { 
+// //    color: $color;
+ 
+//    img {
+//     transition-duration: 0.8s;
+
+//     &:hover { 
+//         transform: scale(1.05);
+//     }
+// }
+
+// }
+
+// .img { 
+//     width:100%;
+// }
+
+// }
+main { 
+    background-color: #ccc;
+    .title {
+        padding: 7px;
+        text-align: center;
+    }
+
+    .prod {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5px;
+        .prod1 { 
+            border: 1px solid #000000;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
+            padding: 40px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img { 
+                width: 220px;
+                height: 190px;
+            }
+            .btn { 
+              padding: .375rem .75rem;
+              border-radius: .25rem;
+              background-color: #007bff;
+              color: #fff;
+              transition: background-color .15s ease-in-out;
+            }
+            button { 
+                padding: $tamaño-chico;
+                font-size: $tamaño-grande;
+            }
+        }
+    }
+    .ultimos { 
+        @extend .prod;
+        padding: $tamaño-chico;
+        .prod2 { 
+            @extend .prod1;
+            
+        }
+    }
+}
+

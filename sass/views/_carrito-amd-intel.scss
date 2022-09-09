@@ -1,0 +1,38 @@
+main { 
+    .prod-car { 
+        display: flex;
+        flex-direction: column;
+        gap: $tamaño-medio-grande;
+        .prod-car-item { 
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            border: 1px solid #000000;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
+            padding: 40px;
+            background-color: white;
+            .btn { 
+                padding: .375rem .75rem;
+                border-radius: .25rem;
+                background-color: #007bff;
+                color: #fff;
+                transition: background-color .15s ease-in-out;
+                padding: $tamaño-chico;
+                font-size: $tamaño-grande;
+              }
+            .prod-car-item-div { 
+                display: flex;
+                align-items: center;
+                p { 
+                    color: $color-terciario
+                }
+            }
+            img { 
+                width: 210px;
+                height: 190px;
+            }
+        }
+    }
+}
